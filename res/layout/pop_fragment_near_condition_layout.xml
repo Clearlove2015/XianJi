@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y15"
+            android:paddingLeft="@dimen/x15"
+            android:text="包间可容纳数（人）" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/y12"
+            android:layout_marginLeft="@dimen/x16"
+            android:layout_marginRight="@dimen/x16"
+            android:layout_marginTop="@dimen/y12"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/condition_num_4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y18"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="2"
+                android:background="@drawable/near_condition_shape"
+                android:gravity="center"
+                android:text="4人"
+                android:textSize="@dimen/x10"
+                android:width="0dp" />
+
+            <TextView
+                android:id="@+id/condition_num_6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y18"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="2"
+                android:background="@drawable/near_condition_shape"
+                android:gravity="center"
+                android:text="6人"
+                android:textSize="@dimen/x10"
+                android:width="0dp" />
+
+            <TextView
+                android:id="@+id/condition_num_8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y18"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="2"
+                android:background="@drawable/near_condition_shape"
+                android:gravity="center"
+                android:text="8人"
+                android:textSize="@dimen/x10"
+                android:width="0dp" />
+
+            <TextView
+                android:id="@+id/condition_num_10"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y18"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="2"
+                android:background="@drawable/near_condition_shape"
+                android:gravity="center"
+                android:text="10人"
+                android:textSize="@dimen/x10"
+                android:width="0dp" />
+
+            <TextView
+                android:id="@+id/condition_num_15"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y18"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="3"
+                android:background="@drawable/near_condition_shape"
+                android:gravity="center"
+                android:text="15人以上"
+                android:textSize="@dimen/x10"
+                android:width="0dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#e5e5e5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y8"
+        android:background="#f2eeeb" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="包间配套和服务" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#e5e5e5" />
+
+    <LinearLayout
+        android:id="@+id/food_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20"
+            android:background="#f2eeeb" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x16"
+                android:text="美 食"
+                android:textColor="#A7A5A6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10" >
+
+                <TextView
+                    android:id="@+id/condition_food_wifi"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="WIFI"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_food_kongtiao"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="空调"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_food_stop"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="停车位"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_food_majiang"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="机麻"
+                    android:width="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10" >
+
+                <TextView
+                    android:id="@+id/condition_food_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="电视"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_food_sofa"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="沙发"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_food_wc"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="卫生间"
+                    android:width="0dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:width="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fun_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20"
+            android:background="#f2eeeb" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x16"
+                android:text="娱 乐"
+                android:textColor="#A7A5A6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10" >
+
+                <TextView
+                    android:id="@+id/condition_fun_01"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="下午场"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_fun_02"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="黄金场"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_fun_03"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="午夜场"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_fun_04"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="包时段"
+                    android:width="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10" >
+
+                <TextView
+                    android:id="@+id/condition_fun_05"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="赠酒水"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_fun_06"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="赠小吃"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_fun_07"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="卫生间"
+                    android:width="0dp" />
+
+                <TextView
+                    android:id="@+id/condition_fun_08"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@drawable/near_condition_shape"
+                    android:gravity="center"
+                    android:text="WIFI"
+                    android:width="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/condition_choice_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:background="#f2eeeb"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="完成"
+            android:textColor="#51AF37" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/near_condition_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66666666" />
+
+</LinearLayout>

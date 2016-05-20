@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Indigo_nav_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x2" >
+
+                <com.schytd.discount.ui.View.ButtonIcon
+                    android:id="@+id/card_back"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:contentDescription="@string/action_settings"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    app:iconDrawable="@drawable/titlebar_btn_back" />
+
+                <TextView
+                    android:id="@+id/message_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="我的优惠券"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x17" />
+
+                <com.schytd.discount.ui.View.ButtonIcon
+                    android:id="@+id/ok_card_choice"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x5"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:contentDescription="@string/action_settings"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    app:iconDrawable="@drawable/gender_ok" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#39A79E" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="@dimen/x5" >
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="使用规则"
+                android:textColor="@color/font_color" />
+        </LinearLayout>
+
+        <com.schytd.discount.ui.View.MyListView
+            android:id="@+id/card_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:drawSelectorOnTop="true"
+            android:scrollbars="none" >
+        </com.schytd.discount.ui.View.MyListView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/card_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/card_list_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/no_data_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:gravity="center"
+            android:text="您还没有获得优惠券哦"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+</FrameLayout>

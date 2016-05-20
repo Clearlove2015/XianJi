@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="280dip"
+    android:orientation="vertical"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_custom_dialog"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:orientation="horizontal" >
+		<ImageView 
+		    android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ic_expand"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:textColor="@color/Indigo_nav_color"
+            android:text="标题"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dip"
+        android:background="@drawable/bg_middle_custom_dialog"
+        android:orientation="horizontal" 
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/no_data_icon"
+            />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip" 
+            android:textSize="16sp"
+            android:text="文本内容"
+            android:textColor="@color/black_gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x5"
+        android:background="@drawable/bg_bottom_custom_dialog"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bbuton_info_rounded"
+            android:textColor="@color/white_gray"
+            android:layout_weight="1"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bbuton_danger_rounded"
+            android:layout_marginLeft="3dip"
+            android:textColor="@color/white_gray"
+            android:layout_weight="1"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

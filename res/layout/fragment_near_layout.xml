@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bar_bg_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x1" >
+
+            <LinearLayout
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x42"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" 附近"
+                    android:textColor="@color/near_top_font_color"
+                    android:textSize="@dimen/x16" />
+            </LinearLayout>
+
+            <!--
+                 <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"
+                android:clickable="true"
+                android:contentDescription="@string/action_settings"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:src="@drawable/near_map" />
+            -->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ffd22e" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/near_choice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:background="#9d9d9d" />
+
+        <LinearLayout
+            android:id="@+id/near_choice_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/near_choice_all_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 全部分类"
+                android:textColor="@color/near_default_font_color" />
+
+            <ImageView
+                android:id="@+id/near_choice_all_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x8"
+            android:layout_marginTop="@dimen/x8"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:id="@+id/near_choice_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/near_choice_field_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 区域"
+                android:textColor="@color/near_default_font_color" />
+
+            <ImageView
+                android:id="@+id/near_choice_field_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x8"
+            android:layout_marginTop="@dimen/x8"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:id="@+id/near_choice_distance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/near_choice_distance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 距离"
+                android:textColor="@color/near_default_font_color" />
+
+            <ImageView
+                android:id="@+id/near_choice_distance_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x8"
+            android:layout_marginTop="@dimen/x8"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:id="@+id/near_choice_condtion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/near_choice_condition_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 条件"
+                android:textColor="@color/near_default_font_color" />
+
+            <ImageView
+                android:id="@+id/near_choice_condition_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#e5e5e5" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/near_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

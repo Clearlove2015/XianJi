@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_classfiy">
+        <item>全城</item>
+        <item>锦江区</item>
+        <item>金牛区</item>
+        <item>青羊区</item>
+        <item>成华区</item>
+        <item>武侯区</item>
+        <item>龙泉驿区</item>
+    </string-array>
+    <string-array name="array_subclassfiy_1">
+        <item>春熙路</item>
+        <item>锦华万达</item>
+        <item>盐市口</item>
+        <item>牛市口</item>
+        <item>双桥子</item>
+        <item>合江亭</item>
+        <item>兰桂坊</item>
+        <item>四川师大</item>
+        <item>书院街</item>
+        <item>九眼桥</item>
+        <item>红星路</item>
+        <item>大慈寺</item>
+        <item>水锦界</item>
+    </string-array>
+    <string-array name="array_subclassfiy_2">
+        <item>火车站</item>
+        <item>西南交大</item>
+        <item>沙湾</item>
+        <item>蜀汉路</item>
+        <item>茶店子</item>
+        <item>抚琴</item>
+        <item>西安北路</item>
+        <item>九里堤</item>
+        <item>一品天下大街</item>
+    </string-array>
+    <string-array name="array_subclassfiy_3">
+        <item>光华</item>
+        <item>杜甫草堂</item>
+        <item>骡马市</item>
+        <item>青羊区</item>
+        <item>府南新区</item>
+        <item>人民公园</item>
+        <item>北门大桥</item>
+        <item>宽窄巷子</item>
+    </string-array>
+    <string-array name="array_subclassfiy_4">
+        <item>建设路</item>
+        <item>万年场</item>
+        <item>双休路</item>
+        <item>驷马桥</item>
+        <item>电视塔</item>
+        <item>八里庄</item>
+        <item>龙潭寺</item>
+        <item>火车东站</item>
+        <item>十里店</item>
+    </string-array>
+    <string-array name="array_subclassfiy_5">
+        <item>高新区</item>
+        <item>科华北路</item>
+        <item>双楠</item>
+        <item>武侯祠</item>
+        <item>桐梓林</item>
+        <item>红牌楼</item>
+        <item>高升桥</item>
+        <item>磨子桥</item>
+        <item>玉林</item>
+    </string-array>
+    <string-array name="array_subclassfiy_6">
+        <item>十陵镇</item>
+        <item>龙都南路</item>
+        <item>音乐广场</item>
+        <item>航天北路</item>
+        <item>建材路</item>
+        <item>洛带古镇</item>
+        <item>阳光城</item>
+        <item>北泉路</item>
+    </string-array>
+    <string-array name="array_distance">
+                                                <item>1000米</item>
+        <item>2000米</item>
+        <item>5000米</item>
+        <item>全市</item>
+    </string-array>
+    <string-array name="array_shaixuan">
+                                               <item>折扣排序</item>
+        <item>距离排序</item>
+    </string-array>
+    <string-array name="spinner4name">
+                                                <item>所有</item>
+                                                <item>已读</item>
+        <item>未读</item>
+    </string-array>
+
+</resources>

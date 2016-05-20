@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.schytd.discount.ui.View.LayoutRipple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/x5"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:paddingTop="@dimen/x5"
+    app:before_color="@color/white" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+            <View
+                android:layout_width="@dimen/x10"
+                android:layout_height="match_parent"
+                android:background="@color/history_color" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/x10" >
+                <TextView
+                    android:id="@+id/card_business_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:text="惠消费"
+                    android:textColor="@color/history_color"
+                    android:textSize="@dimen/x18" />
+                <TextView
+                    android:id="@+id/card_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x5"
+                    android:textColor="#666666" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textSize="@dimen/x20" />
+                <TextView
+                    android:id="@+id/card_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="@dimen/x30" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_choice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22666666"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_choice" />
+        </LinearLayout>
+    </FrameLayout>
+</com.schytd.discount.ui.View.LayoutRipple>
